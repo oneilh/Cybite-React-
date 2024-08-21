@@ -1,3 +1,9 @@
+## How to Install
+- download zip from github
+- cd My-app
+- npm i
+- npm run dev
+
 ## JSX Rules
 - always return a single element
 - we can use react fragment with adding extra nodes
