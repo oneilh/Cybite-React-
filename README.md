@@ -1,3 +1,9 @@
+## How to Install
+- download zip from github
+- cd My-app
+- npm i
+- npm run dev
+
 ## JSX Rules
 - always return a single element
 - we can use react fragment with adding extra nodes
@@ -51,11 +57,38 @@ statement are not
 ## Props
 - passing props
 - using strings, variables as props
-- objects as props
+- objects and array as props
 - destructuring props
 - children props
+- spread operator
+
+Project: Movie list
+
+
 
 ## List and keys
 - map
-  objects can't can be rendered in react
-  spread operator
+  Note: objects can't can be rendered in react
+
+## Events
+    in Js:
+    ```
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click',()=>{
+        // access the event properties
+        // do something once the event fires
+    })
+    ```
+    - by reference
+    - iffy func (used when you want to pass arguments to your func)
+    - inline function / arrow func
+    - functions as props
+    - components are independent
+
+## conditional Rendering
+- if statement
+- element variable
+- ternary operator 
+- short circuit
+
+Project: updating the movie list, contact list, dice game

@@ -4,7 +4,13 @@ const style = {
   border: "1px solid white",
 };
 
-const Movie = ({ name, image, genre, rating, Trend, director, alt }) => {
+const Movie = (props) => {
+  // console.log(props);
+  const { name, image, genre, rating, director, alt } = props;
+
+  function show(name) {
+    console.log("Name of movie: ", name);
+  }
   return (
     <div>
       <img src={image} alt={alt} />
@@ -12,7 +18,11 @@ const Movie = ({ name, image, genre, rating, Trend, director, alt }) => {
       <p>{genre}</p>
       <h5>{rating}</h5>
       <p>Director: {director}</p>
-      <p>{Trend}</p>
+      <button
+        onClick={()=>{show(name)}}
+      >
+        Show Name
+      </button>
     </div>
   );
 };
